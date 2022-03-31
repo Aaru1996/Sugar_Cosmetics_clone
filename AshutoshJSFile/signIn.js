@@ -15,7 +15,8 @@ var userData = JSON.parse(localStorage.getItem("userDatabase"));
         for(var i=0; i<userData.length; i++){
             if((email == userData[i].email) && (password == userData[i].password)){
                  alert("login successfull");
-                // window.location.href = "signup.html";
+                window.location.href = "index.html";
+                
                 break;
             }
             else{
