@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BRUSHES</title>
+    <title>LIPS</title>
     <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
     <style>
         * {
@@ -53,6 +53,7 @@
 
         img {
             max-width: 100%;
+            margin-top: 10px;
         }
 
         .top>p {
@@ -73,6 +74,7 @@
             color: #808080;
             font-weight: 600;
             margin-top: 5px;
+            text-transform: uppercase;
         }
 
         .box>p {
@@ -135,133 +137,104 @@
 </html>
 
 <script>
-    var mensData = [
+    var Lips = [
         {
             image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-14_1.jpg?v=1627659982",
-            name: "BLEND TREND EYESHADOW BRUSH - 043 ROUND Xl",
-            price: "RS.399",
-            rating: "4.8(414)",
-            strike: '',
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-smudge-me-not-liquid-lipstick-minis-set-15520724582483.jpg?v=1620651966",
+            name: "Smudge Me Not Minis Set - Pink",
+            price: "RS.799",
+            rating: "4.5(35)",
+            strike: 'RS.999',
         },
         {
             image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-12-min.jpg?v=1627573647",
-            name: "Blend Trend Dual Face Brush - 075 Powder + … ",
-            price: "RS.599",
-            rating: "4.5(141)",
-            strike: '',
-        }, {
-            image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-003Contour.jpg?v=1627659996",
-            name: "Blend Trend Face Brush - 003 Cont…",
-            price: "RS.399",
-            rating: "4.5(121)",
-            strike: '',
-        }, {
-            image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFoundationBrush-052Kabuki.jpg?v=1627573664",
-            name: "Blend Trend Foundation Brush - 052…",
-            price: "RS.399",
-            rating: "4.8(41)",
-            strike: '',
-        }, {
-            image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-3-min.jpg?v=1627573657",
-            name: "Blend Trend Eyeshadow Brush - 042…",
-            price: "RS.499",
-            rating: "4.8(142)",
-            strike: '',
-        }, {
-            image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/1_1.jpg?v=1630683833",
-            name: "Blend Trend Eyeshadow Brush - 042… ",
-            price: "RS.649",
-            rating: "4.7(54)",
-            strike: 'RS.799',
-        }, {
-            image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-007Powder.jpg?v=1627660008",
-            name: "Blend Trend Eyeshadow Brush - 042… ",
-            price: "RS.399",
-            rating: "4.5(421)",
-            strike: '',
-        }, {
-            image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-006Highlighter.jpg?v=1627660002",
-            name: "Blend Trend Face Brush - 006 Highl…",
-            price: "RS.399",
-            rating: "4.8(197)",
-            strike: '',
-        }, {
-            image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-001Blush.jpg?v=1627659984",
-            name: "Blend Trend Face Brush - 001 Blush",
-            price: "RS.399",
-            rating: "4.9(137)",
-            strike: '',
-        }, {
-            image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-2-min.jpg?v=1627573652",
-            name: "Blend Trend Eyeshadow Brush - 041…",
-            price: "RS.399",
-            rating: "4.5(121)",
-            strike: '',
-        }, {
-            image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-5-min.jpg?v=1627573639",
-            name: "Blend Trend Dual Eyeshadow Brush…",
-            price: "RS.599",
-            rating: "4.6(124)",
-            strike: '',
-        }, {
-            image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-13.jpg?v=1627659977",
-            name: "Blend Trend Dual Eyeshadow Brush…",
-            price: "RS.599",
-            rating: "4.8(201)",
-            strike: '',
-        }, {
-            image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFoundationBrush-051Flat.jpg?v=1627573670",
-            name: "Blend Trend Foundation Brush - 051…",
-            price: "RS.399",
-            rating: "4.6(137)",
-            strike: '',
-        }, {
-            image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-002Concealer.jpg?v=1627659990",
-            name: "Blend Trend Face Brush - 002 Conc… ",
-            price: "RS.399",
-            rating: "4.8(27)",
-            strike: '',
-        }, {
-            image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/BeginnersEssentialsCombo1-WBGimages.jpg?v=1630683801",
-            name: "Beginners Essential Combo 1",
-            price: "RS.999",
-            rating: "4.5(421)",
-            strike: 'RS.1199',
-        }, {
-            image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/BeginnersEssentialsCombo2-WBGimages.jpg?v=1630683812",
-            name: "Beginners Essential Combo 2",
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-smudge-me-not-minis-set-pink-14629810667603.jpg?v=1620652894",
+            name: "Smudge Me Not Minis Set - Pink",
             price: "RS.799",
-            rating: "4.5(421)",
+            rating: "4.9(111)",
             strike: 'RS.999',
         }, {
             image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/BeginnersEssentialsCombo3-WBGimages.jpg?v=1630683820",
-            name: "Face Essentials Combo",
-            price: "RS.1499",
-            rating: "4.5(421)",
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-smudge-me-not-liquid-lipstick-mint-green-minis-set-14792910340179.jpg?v=1620652722",
+            name: "Smudge Me Not Minis Set - Mint Green",
+            price: "RS.799",
+            rating: "4.3(63)",
+            strike: 'RS.999',
+        }, {
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-smudge-me-not-mini-lipstick-mint-green-set-bestseller-28336342171731.jpg?v=1623073344",
+            name: "Smudge Me Not Mini Lipstick Mint… ",
+            price: "RS.799",
+            rating: "4.8(45)",
+            strike: 'RS.999',
+        }, {
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-tipsy-lips-moisturizing-balm-01-mojito-15057279877203.jpg?v=1619122412",
+            name: "Tipsy Lips Moisturizing Balm",
+            price: "RS.199",
+            rating: "4.8(12)",
+            strike: '',
+        }, {
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/Red-Mini-Ret--WBG-1.jpg?v=1625845364",
+            name: "Smudge Me Not Minis Set - Red",
+            price: "RS.799",
+            rating: "4.9(41)",
+            strike: 'RS.999',
+        }, {
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-smudge-me-not-mini-lipstick-black-set-bestseller-28336345514067.jpg?v=1623073340",
+            name: "Smudge Me Not Mini Lipstick Black… ",
+            price: "RS.799",
+            rating: "4.9(27)",
+            strike: 'RS.999',
+        }, {
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-matte-as-hell-crayon-lipstick-minis-set-28270316945491.jpg?v=1623073051",
+            name: "Matte As Hell Crayon Lipstick Minis Set",
+            price: "RS.1099",
+            rating: "4.9(12)",
             strike: 'RS.1799',
-        },
-        
+        }, {
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-lip-service-tint-remover-28122580910163.jpg?v=1619155575",
+            name: "LIP SERVICE TINT REMOVER",
+            price: "RS.399",
+            rating: "4.0(6)",
+            strike: '',
+        }, {
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-lipping-on-the-edge-lip-liner-01-taffeta-terracotta-13278188568659.jpg?v=1619109027",
+            name: "Lipping On The Edge Lip Liner",
+            price: "RS.499",
+            rating: "4.8(55)",
+            strike: '',
+        }, {
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/1_6a5fa1af-0d0e-4e9e-85d1-579495fb5030.jpg?v=1648482145",
+            name: "Arch Arrival Micro Brow Pencil",
+            price: "RS.499",
+            rating: "5(29)",
+            strike: '',
+        }, {
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-mini-liquid-lipstick-set-adventurous-27950522073171.jpg?v=1620652479",
+            name: "Mini Liquid Lipstick Set - Adventurous",
+            price: "RS.799",
+            rating: "4.9(21)",
+            strike: 'RS.999',
+        }, {
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-mini-liquid-lipstick-set-red-fearless-27943255703635.jpg?v=1620652654",
+            name: "Mini Liquid Lipstick Set - Fearless",
+            price: "RS.799",
+            rating: "4.7(19)",
+            strike: 'RS.999',
+        }, 
     ];
 
-    var cartData = JSON.parse(localStorage.getItem("cart")) || [];
-    mensData.map(function (elem) {
+    var lipsData = JSON.parse(localStorage.getItem("cart")) || [];
+    Lips.map(function (elem) {
 
         var box = document.createElement("div");
         var top = document.createElement("div");
