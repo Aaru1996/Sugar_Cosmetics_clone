@@ -147,14 +147,48 @@
         }
       
         /* Homepage main image */
-        #homeImg{
+        #sugarHome{
             width:100%;
-            height:330px;
+            height:300px;
+            overflow: hidden;
         }
-        #homeImg>img{
-            width:100%;
-            height:100%;
+        #sliderBox{
+            position: relative;
+            width: 500%;
+            animation: slide 25s infinite;
         }
+        #sliderBox>img{
+            float:left;
+            height:300px;
+            width:20%;
+          
+        }
+        #sliderBox:hover {
+               cursor: pointer;
+               animation-play-state: paused;
+        }
+        @keyframes slide {
+           
+            0%{ left:0%;}
+            16%{ left:0%;}
+
+            20%{ left:-100%;}
+            36%{ left:-100%;}
+
+            40%{ left:-200%;}
+            56%{ left:-200%;}
+
+            60%{ left:-300%;}
+            76%{ left:-300%;}
+
+            80%{ left:-400%;}
+            96%{ left:-400%;}
+
+           /* 100%{ left:-500%;} */
+            
+
+        }
+       
         
         /* referral part */
         #referral{
@@ -226,12 +260,41 @@
 
         /* beauty */
 
-         #beauty>img{
-             width:100%;
-             height:350px;
-             
-         }
+        #sugarHome2{
+            width:100%;
+            height:300px;
+            overflow: hidden;
+        }
+        #sliderBox2{
+            position: relative;
+            width: 300%;
+            animation: slide 15s infinite;
+        }
+        #sliderBox2>img{
+            float:left;
+            height:300px;
+            width:33.33%;
+          
+        }
+        #sliderBox2:hover {
+               cursor: pointer;
+               animation-play-state: paused;
+        }
+        @keyframes slide {
+           
+            0%{ left:0%;}
+            26%{ left:0%;}
 
+            33.33%{ left:-100%;}
+            60%{ left:-100%;}
+
+            66.66%{ left:-200%;}
+            93.33%{ left:-200%;}
+
+           /* 100%{ left:-300%;} */
+            
+
+        }
          /* Hot deals */
 
          #deals{
@@ -592,8 +655,15 @@
    
     <!-- /* Homepage main image */ -->
 
-    <div id="homeImg">
-        <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/c9a8f16d-707c-487f-a426-778f824a00c6.jpg"> 
+    <div id="sugarHome">
+        <div id="sliderBox">
+            <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/013e2576-1138-4907-b0bb-a48c887a77a4.jpg" alt="">
+            <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/752f76ba-835e-4c01-8770-12f2c4d8b0a1.jpg" alt="">
+            <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/954692a8-da25-48b3-8f5d-0901ceb39e14.gif" alt="">
+            <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/8d0b01ec-f63b-4426-a606-213804213bf5.jpg" alt="">
+            <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/eb21f571-0c5b-4110-9df2-934b8f6fa1e1.jpg">
+        </div>
+        
     </div>
     
     <!-- referral part -->
@@ -658,11 +728,15 @@
 
    <!-- beauty tips -->
    <p class="para">QUICK BEAUTY TIPS WITH SUGAR</p>
-   <div id="beauty">
-       
-       <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/cc817aef-b0b7-46bf-b702-809d3c704672.jpg">
-
-   </div>
+   <div id="sugarHome2">
+    <div id="sliderBox2">
+        <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/61da7805-5421-41f2-902e-78b806d5cc51.jpg" alt="">
+        <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/cc817aef-b0b7-46bf-b702-809d3c704672.jpg" alt="">
+        <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/28809f45-ec81-4a9a-afef-bb3e6ae1bd35.jpg" alt="">
+        
+    </div>
+    
+</div>
 
    <!-- hot deals -->
    <p  class="para">HOT DEALS</p>
