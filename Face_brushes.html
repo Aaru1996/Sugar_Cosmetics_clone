@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FACE BRUSHES</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0px auto;
+            max-width: 90%;
+            padding: 0 25px;
+        }
+
+        p {
+            margin: 0 0 10px;
+        }
+
+        .rating-wrapper,
+        .price-wrapper {
+            margin-bottom: 10px;
+        }
+
+        .box {
+            /* height: 400px; */
+            width: calc(25% - 50px);
+            margin: 0px 25px 25px;
+            /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+        }
+
+        .top {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: right;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .top>p {
+            margin-bottom: 0;
+        }
+
+        .top>img {
+            height: 10px;
+            width: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+
+
+        .name {
+            text-align: center;
+            color: #808080;
+            font-weight: 600;
+            margin-top: 5px;
+            text-transform: uppercase;
+        }
+
+        .box>p {
+            text-align: center;
+        }
+
+        .fa-star {
+            color: #f5be18;
+        }
+
+        .bottom-block {
+            border: 1px solid #000;
+            display: flex;
+            width: 100%;
+            margin-top: auto;
+            /* transition: all 0.3s; */
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .box:hover .bottom-block {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .box:hover {
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            ;
+        }
+
+        .bottom-block span {
+            padding: 0 15px;
+            /* margin: auto; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bottom-block button {
+            background-color: #000;
+            color: #fff;
+            outline: none;
+            width: 100%;
+            border-color: transparent;
+            padding: 10px;
+            min-height: 40px;
+        }
+
+        .main-img {
+            height: 260px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container"></div>
+</body>
+
+</html>
+
+<script>
+    var Brushesdata = [
+       
+        {
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-12-min.jpg?v=1627573647",
+            name: "Blend Trend Dual Face Brush - 075 Powder + … ",
+            price: "RS.599",
+            rating: "4.5(141)",
+            strike: '',
+        }, {
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-003Contour.jpg?v=1627659996",
+            name: "Blend Trend Face Brush - 003 Cont…",
+            price: "RS.399",
+            rating: "4.5(121)",
+            strike: '',
+        }, {
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFoundationBrush-052Kabuki.jpg?v=1627573664",
+            name: "Blend Trend Foundation Brush - 052…",
+            price: "RS.399",
+            rating: "4.8(41)",
+            strike: '',
+        },  {
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-007Powder.jpg?v=1627660008",
+            name: "Blend Trend Eyeshadow Brush - 042… ",
+            price: "RS.399",
+            rating: "4.5(421)",
+            strike: '',
+        }, {
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-006Highlighter.jpg?v=1627660002",
+            name: "Blend Trend Face Brush - 006 Highl…",
+            price: "RS.399",
+            rating: "4.8(197)",
+            strike: '',
+        }, {
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-001Blush.jpg?v=1627659984",
+            name: "Blend Trend Face Brush - 001 Blush",
+            price: "RS.399",
+            rating: "4.9(137)",
+            strike: '',
+        },  {
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFoundationBrush-051Flat.jpg?v=1627573670",
+            name: "Blend Trend Foundation Brush - 051…",
+            price: "RS.399",
+            rating: "4.6(137)",
+            strike: '',
+        }, {
+            image_url:
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-002Concealer.jpg?v=1627659990",
+            name: "Blend Trend Face Brush - 002 Conc… ",
+            price: "RS.399",
+            rating: "4.8(27)",
+            strike: '',
+        }, 
+        
+    ];
+
+    var faceBrush = JSON.parse(localStorage.getItem("cart")) || [];
+    Brushesdata.map(function (elem) {
+
+        var box = document.createElement("div");
+        var top = document.createElement("div");
+        var bottom = document.createElement("div");
+        var rating_wrapper = document.createElement("div");
+        var price_wrapper = document.createElement("div");
+
+        var shade = document.createElement("p");
+        shade.textContent = elem.shade;
+
+        var img_shade = document.createElement("img");
+        img_shade.src = elem.shade_image;
+
+        var img = document.createElement("img");
+        img.src = elem.image_url;
+        img.classList.add("main-img");
+
+        var name = document.createElement("p");
+        name.textContent = elem.name;
+
+        var price = document.createElement("span");
+        price.innerText = elem.price;
+
+        var strike = document.createElement("s");
+        strike.innerText = elem.strike;
+
+        var rating = document.createElement("span");
+        rating.innerText = elem.rating;
+
+        var star_icon = document.createElement("span");
+        star_icon.innerHTML += '<i class="fa fa-star" aria-hidden="true"></i>'
+
+        var heart_icon = document.createElement("span");
+        heart_icon.innerHTML += '<i class="fa-regular fa-heart"></i>'
+
+        name.classList.add("name");
+        box.classList.add("box");
+        top.classList.add("top");
+        bottom.classList.add("bottom-block");
+        rating_wrapper.classList.add("rating-wrapper");
+        price_wrapper.classList.add("price-wrapper");
+
+        var btn = document.createElement("button");
+        btn.innerText = "ADD TO CART";
+        btn.addEventListener("click", function () {
+            addToCart(elem);
+        });
+
+        top.append(shade, img_shade);
+        price_wrapper.append(strike, price)
+        rating_wrapper.append(star_icon, rating);
+        bottom.append(heart_icon, btn);
+        box.append(img, name, price_wrapper, rating_wrapper, bottom);
+
+        document.querySelector("#container").append(box);
+    });
+
+
+</script>
