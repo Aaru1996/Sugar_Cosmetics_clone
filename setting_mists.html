@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BRUSHES</title>
+    <title>SETTINGMIST</title>
     <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
     <style>
         * {
@@ -53,6 +53,7 @@
 
         img {
             max-width: 100%;
+            margin-top: 10px;
         }
 
         .top>p {
@@ -73,6 +74,7 @@
             color: #808080;
             font-weight: 600;
             margin-top: 5px;
+            text-transform: uppercase;
         }
 
         .box>p {
@@ -135,133 +137,40 @@
 </html>
 
 <script>
-    var Brushesdata = [
+    var setting_mist = [
         {
             image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-14_1.jpg?v=1627659982",
-            name: "BLEND TREND EYESHADOW BRUSH - 043 ROUND Xl",
-            price: "RS.399",
-            rating: "4.8(414)",
-            strike: '',
-        },
-        {
-            image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-12-min.jpg?v=1627573647",
-            name: "Blend Trend Dual Face Brush - 075 Powder + … ",
-            price: "RS.599",
-            rating: "4.5(141)",
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-grand-finale-highlighting-setting-mist-14890487218259.jpg?v=1619121418",
+            name: "Grand Finale Highlighting Setting Mist",
+            price: "RS.699",
+            rating: "4.9(61)",
             strike: '',
         }, {
             image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-003Contour.jpg?v=1627659996",
-            name: "Blend Trend Face Brush - 003 Cont…",
-            price: "RS.399",
-            rating: "4.5(121)",
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-grand-finale-dewy-setting-mist-14890489184339.jpg?v=1619121429",
+            name: "Grand Finale Dewy Setting Mist",
+            price: "RS.699",
+            rating: "4.7(66)",
             strike: '',
         }, {
             image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFoundationBrush-052Kabuki.jpg?v=1627573664",
-            name: "Blend Trend Foundation Brush - 052…",
-            price: "RS.399",
-            rating: "4.8(41)",
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-grand-finale-spf30-setting-mist-15637215576147.jpg?v=1619151508",
+            name: "Grand Finale SPF30 Setting Mist",
+            price: "RS.699",
+            rating: "4.9(41)",
             strike: '',
         }, {
             image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-3-min.jpg?v=1627573657",
-            name: "Blend Trend Eyeshadow Brush - 042…",
-            price: "RS.499",
-            rating: "4.8(142)",
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-grand-finale-matte-setting-mist-14890481090643.jpg?v=1619121408",
+            name: "Grand Finale Matte Setting Mist",
+            price: "RS.699",
+            rating: "4.9(27)",
             strike: '',
-        }, {
-            image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/1_1.jpg?v=1630683833",
-            name: "Blend Trend Eyeshadow Brush - 042… ",
-            price: "RS.649",
-            rating: "4.7(54)",
-            strike: 'RS.799',
-        }, {
-            image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-007Powder.jpg?v=1627660008",
-            name: "Blend Trend Eyeshadow Brush - 042… ",
-            price: "RS.399",
-            rating: "4.5(421)",
-            strike: '',
-        }, {
-            image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-006Highlighter.jpg?v=1627660002",
-            name: "Blend Trend Face Brush - 006 Highl…",
-            price: "RS.399",
-            rating: "4.8(197)",
-            strike: '',
-        }, {
-            image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-001Blush.jpg?v=1627659984",
-            name: "Blend Trend Face Brush - 001 Blush",
-            price: "RS.399",
-            rating: "4.9(137)",
-            strike: '',
-        }, {
-            image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-2-min.jpg?v=1627573652",
-            name: "Blend Trend Eyeshadow Brush - 041…",
-            price: "RS.399",
-            rating: "4.5(121)",
-            strike: '',
-        }, {
-            image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-5-min.jpg?v=1627573639",
-            name: "Blend Trend Dual Eyeshadow Brush…",
-            price: "RS.599",
-            rating: "4.6(124)",
-            strike: '',
-        }, {
-            image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-13.jpg?v=1627659977",
-            name: "Blend Trend Dual Eyeshadow Brush…",
-            price: "RS.599",
-            rating: "4.8(201)",
-            strike: '',
-        }, {
-            image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFoundationBrush-051Flat.jpg?v=1627573670",
-            name: "Blend Trend Foundation Brush - 051…",
-            price: "RS.399",
-            rating: "4.6(137)",
-            strike: '',
-        }, {
-            image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-002Concealer.jpg?v=1627659990",
-            name: "Blend Trend Face Brush - 002 Conc… ",
-            price: "RS.399",
-            rating: "4.8(27)",
-            strike: '',
-        }, {
-            image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/BeginnersEssentialsCombo1-WBGimages.jpg?v=1630683801",
-            name: "Beginners Essential Combo 1",
-            price: "RS.999",
-            rating: "4.5(421)",
-            strike: 'RS.1199',
-        }, {
-            image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/BeginnersEssentialsCombo2-WBGimages.jpg?v=1630683812",
-            name: "Beginners Essential Combo 2",
-            price: "RS.799",
-            rating: "4.5(421)",
-            strike: 'RS.999',
-        }, {
-            image_url:
-                "https://cdn.shopify.com/s/files/1/0906/2558/products/BeginnersEssentialsCombo3-WBGimages.jpg?v=1630683820",
-            name: "Face Essentials Combo",
-            price: "RS.1499",
-            rating: "4.5(421)",
-            strike: 'RS.1799',
-        },
-        
+        }, 
     ];
 
-    var brushData = JSON.parse(localStorage.getItem("cart")) || [];
-    Brushesdata.map(function (elem) {
+    var mistData = JSON.parse(localStorage.getItem("cart")) || [];
+    setting_mist.map(function (elem) {
 
         var box = document.createElement("div");
         var top = document.createElement("div");

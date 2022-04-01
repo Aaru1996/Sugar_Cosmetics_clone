@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BRUSHES</title>
+    <title>SKIN</title>
     <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
     <style>
         * {
@@ -137,7 +137,7 @@
 </html>
 
 <script>
-    var mensData = [
+    var Skin = [
         {
             image_url:
                 "https://cdn.shopify.com/s/files/1/0906/2558/products/373515742-01.jpg?v=1646235720",
@@ -323,8 +323,8 @@
 
     ];
 
-    var cartData = JSON.parse(localStorage.getItem("cart")) || [];
-    mensData.map(function (elem) {
+    var skinData = JSON.parse(localStorage.getItem("cart")) || [];
+    Skin.map(function (elem) {
 
         var box = document.createElement("div");
         var top = document.createElement("div");
