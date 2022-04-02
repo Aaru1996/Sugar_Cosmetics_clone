@@ -135,7 +135,7 @@
 </html>
 
 <script>
-    var Brushesdata = [
+    var eyebrush = [
         {
             image_url:
                 "https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-14_1.jpg?v=1627659982",
@@ -175,8 +175,8 @@
         }, 
     ];
 
-    var eyebrush = JSON.parse(localStorage.getItem("cart")) || [];
-    Brushesdata.map(function (elem) {
+    localStorage.setItem("cart", JSON.stringify(eyebrush));
+    eyebrush.map(function (elem) {
 
         var box = document.createElement("div");
         var top = document.createElement("div");

@@ -136,7 +136,7 @@
 </html>
 
 <script>
-    var Brushesdata = [
+    var faceBrushes = [
        
         {
             image_url:
@@ -198,8 +198,8 @@
         
     ];
 
-    var faceBrush = JSON.parse(localStorage.getItem("cart")) || [];
-    Brushesdata.map(function (elem) {
+    var faceBrushes = JSON.parse(localStorage.getItem("cart")) || [];
+    faceBrushes.map(function (elem) {
 
         var box = document.createElement("div");
         var top = document.createElement("div");

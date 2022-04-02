@@ -202,7 +202,7 @@
         },
     ];
 
-    var aquaholicData = JSON.parse(localStorage.getItem("cart")) || [];
+    localStorage.setItem("cart", JSON.stringify(aquaholic));
     aquaholic.map(function (elem) {
 
         var box = document.createElement("div");

@@ -183,7 +183,7 @@
         }, 
     ];
 
-    var citrusData = JSON.parse(localStorage.getItem("cart")) || [];
+    localStorage.setItem("cart", JSON.stringify(citrus));
     citrus.map(function (elem) {
 
         var box = document.createElement("div");

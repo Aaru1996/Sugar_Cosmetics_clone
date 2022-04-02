@@ -183,7 +183,7 @@
         }, 
     ];
 
-    var coffeeData = JSON.parse(localStorage.getItem("cart")) || [];
+    localStorage.setItem("cart", JSON.stringify(coffee));
     coffee.map(function (elem) {
 
         var box = document.createElement("div");

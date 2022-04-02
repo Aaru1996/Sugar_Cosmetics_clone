@@ -247,7 +247,8 @@
         }, 
     ];
 
-    var EyesData = JSON.parse(localStorage.getItem("cart")) || [];
+    localStorage.setItem("cart", JSON.stringify(Eyes));
+
     Eyes.map(function (elem) {
 
         var box = document.createElement("div");
