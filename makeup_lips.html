@@ -233,7 +233,8 @@
         }, 
     ];
 
-    var lipsData = JSON.parse(localStorage.getItem("cart")) || [];
+    localStorage.setItem("cart", JSON.stringify(Lips));
+
     Lips.map(function (elem) {
 
         var box = document.createElement("div");

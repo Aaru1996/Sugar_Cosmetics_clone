@@ -197,7 +197,8 @@
         }, 
     ];
 
-    var facemaskData = JSON.parse(localStorage.getItem("cart")) || [];
+    localStorage.setItem("cart", JSON.stringify(mask));
+
     mask.map(function (elem) {
 
         var box = document.createElement("div");

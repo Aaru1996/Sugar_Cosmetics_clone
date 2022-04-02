@@ -171,7 +171,8 @@
 
     ];
 
-    var cartData = JSON.parse(localStorage.getItem("cart")) || [];
+    localStorage.setItem("cart", JSON.stringify(moisturizer));
+
     moisturizer.map(function (elem) {
 
         var box = document.createElement("div");

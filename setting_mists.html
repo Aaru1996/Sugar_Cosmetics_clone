@@ -169,7 +169,8 @@
         }, 
     ];
 
-    var mistData = JSON.parse(localStorage.getItem("cart")) || [];
+    localStorage.setItem("cart", JSON.stringify(setting_mist));
+
     setting_mist.map(function (elem) {
 
         var box = document.createElement("div");

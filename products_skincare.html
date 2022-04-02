@@ -323,7 +323,8 @@
 
     ];
 
-    var skinData = JSON.parse(localStorage.getItem("cart")) || [];
+    localStorage.setItem("cart", JSON.stringify(Skin));
+
     Skin.map(function (elem) {
 
         var box = document.createElement("div");
