@@ -15,6 +15,10 @@
         body {
             font-family: 'Poppins', sans-serif;
         }
+        a{
+            text-decoration: none;
+            color: #1f1f1f;
+        }
 
         .para {
 
@@ -500,9 +504,8 @@
             <p><u><a href="signup.html">Login/Signup</a></u></p>
         </div>
         <div id="icon">
-            <i class="fa-solid fa-heart"></i>
-
-            <i class="fa-solid fa-cart-arrow-down"></i>
+            <a href="wishList.html"><i class="fa-solid fa-heart"></i></a> 
+            <a href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
             <img src="https://in.sugarcosmetics.com/desc-images/discountIcon.svg">
         </div>
         <div>
@@ -785,6 +788,13 @@
 
         document.querySelector(".container").append(box);
     });
+   
+    var cartArray= JSON.parse(localStorage.getItem("cartItem")) || [];
+     function addToCart(elem){
+        cartArray.push(elem);
+        alert("item added to cart")
 
+        localStorage.setItem("cartItem",JSON.stringify(cartArray))
+     }
 
 </script>

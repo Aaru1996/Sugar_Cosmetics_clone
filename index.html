@@ -29,6 +29,10 @@
          
             font-family: 'Quicksand', sans-serif;
         }
+        a{
+            text-decoration: none;
+            color: #1f1f1f;
+        }
         body img,button,i:hover{
             cursor: pointer;
         }
@@ -39,7 +43,7 @@
             display:flex;
             width:100%;
             height:70px;
-            justify-content:space-between;
+            justify-content:space-around;
             align-items: center;
             
             background-color: #f8f9fa;
@@ -81,8 +85,9 @@
             height:15px;
             margin:5px
         }
-        #icon>i{
+        #icon i{
             color:#495057
+            
         }
         #icon{
             margin-right: -50px !important
@@ -578,12 +583,12 @@
        </div>
        <div class="cursor"> 
            <img id="loginimg" src="https://in.sugarcosmetics.com/desc-images/person.png">
-           <p><u><a href="signup.html">Login/Signup</a></u></p>
+           <p><u><a href="signup.html">Login/Register</a></u></p>
        </div>
        <div id="icon">
-         <i class="fa-solid fa-heart"></i>
-      
-         <i class="fa-solid fa-cart-arrow-down"></i>
+          <a href="wishList.html"><i class="fa-solid fa-heart"></i></a> 
+          <a href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
+          <!-- <i class="fa-solid fa-cart-arrow-down"></i> -->
          <img src="https://in.sugarcosmetics.com/desc-images/discountIcon.svg">
        </div>
        <div>
