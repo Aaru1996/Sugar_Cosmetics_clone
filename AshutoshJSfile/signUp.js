@@ -48,4 +48,7 @@ function addData(event){
 
     }
 }
-
+document.querySelector(".close").addEventListener("click",function(){
+    document.querySelector(".wrapper").style.display="none"
+    window.location.href="index.html"
+})

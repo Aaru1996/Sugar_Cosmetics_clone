@@ -24,3 +24,8 @@ var userData = JSON.parse(localStorage.getItem("userDatabase"));
             }
         }
   }
+  document.querySelector(".close").addEventListener("click",function(){
+    document.querySelector(".close").style.display="none"
+    window.location.href="index.html"
+    console.log(hello)
+  })
