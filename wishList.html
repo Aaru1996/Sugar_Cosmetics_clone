@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .para {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 300;
+        color: #212529;
+        padding: 20px 0px;
+        background-color: #f8f9fa;
+
+        font-family: "Quicksand", sans-serif;
+      }
+      /* *{
+          background-color: #f8f9fa;
+      } */
+      #container {
+        display: flex;
+        width: 100%;
+        height: 70px;
+        justify-content: space-between;
+        align-items: center;
+
+        background-color: #f8f9fa;
+      }
+      #container > div {
+        /* border: red solid 1px; */
+
+        display: flex;
+      }
+      #container > #inputdiv {
+        width: 50%;
+      }
+      #inputdiv > #searchBar {
+        border-radius: 30px 0px 0px 30px;
+        width: 80%;
+        padding: 15px 0px 15px 20px;
+        border: 0px;
+      }
+      #inputdiv > button {
+        background-color: black;
+        color: white;
+        width: 20%;
+        border-radius: 0px 30px 30px 0px;
+        border: 0px;
+        font-size: 15px;
+      }
+      #loginimg {
+        height: 28px;
+
+        margin-top: 10px;
+      }
+
+      #icon > img,
+      i {
+        height: 15px;
+        margin: 5px;
+      }
+      #icon > i {
+        color: #495057;
+      }
+      #icon {
+        margin-right: -50px !important;
+      }
+      /* dropdoun menu */
+
+      #maindropdown {
+        width: 100%;
+        height: 40px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 10px 0px;
+      }
+      #dropdown-container {
+        width: 50%;
+        height: 40px;
+        /* border:red solid 1px; */
+        display: flex;
+        justify-content: center;
+      }
+      #dropdown-container > div {
+        /* border: blue solid 1px ; */
+        box-sizing: border-box;
+        width: 16%;
+      }
+
+      .dropdownBox {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        margin-top: 8px;
+        color: #495057;
+      }
+      .dropdownBox a {
+        color: grey;
+        text-decoration: none;
+      }
+
+      .dropdownList {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+      }
+      .dropdownBox:hover .dropdownList {
+        display: block;
+        cursor: pointer;
+
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        z-index: 1;
+        float: inline-start;
+      }
+      .dropdownList > p:hover {
+        font-weight: bold;
+      }
+
+      /* Homepage main image */
+      #homeImg {
+        width: 100%;
+        height: 330px;
+      }
+      #homeImg > img {
+        width: 100%;
+        height: 100%;
+      }
+
+      /* referral part */
+      #referral {
+        background-color: #f8f9fa;
+      }
+
+      #referral > p {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 300;
+        color: #1f1f1f;
+      }
+      #referral > img {
+        width: 95%;
+        height: 330px;
+        margin: auto;
+        display: flex;
+      }
+
+      /* best sellers */
+
+      #seller {
+        width: 80%;
+        height: 350px;
+        /* border: red solid 1px; */
+        background-color: #f8f9fa;
+        margin: auto;
+        display: flex;
+      }
+      #seller > div {
+        width: 22%;
+        height: 100%;
+        margin: auto;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+          rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; /* border:blue solid 1px; */
+      }
+      #seller > div > div:nth-child(1) {
+        width: 80%;
+        height: 65%;
+        /* border:blue solid 1px; */
+        margin: 0px 20px;
+      }
+
+      #seller > div > div > img {
+        width: 100%;
+        height: 100%;
+      }
+      #seller > div > div:nth-child(2) {
+        width: 100%;
+        height: 35%;
+        text-align: center;
+      }
+      #seller > div > div > p {
+        font-size: 17px;
+        font-weight: 300;
+      }
+      #seller > div > div > h1 {
+        margin-bottom: 28px;
+        font-size: 13px;
+      }
+      #seller > div > div > p:nth-child(3) {
+        background-color: #1f1f1f;
+        color: white;
+        padding: 10px 0px;
+        font-weight: 300;
+      }
+
+      /* beauty */
+
+      #beauty > img {
+        width: 100%;
+        height: 350px;
+      }
+
+      /* Hot deals */
+
+      #deals {
+        width: 100%;
+        height: 280px;
+        display: flex;
+
+        background-color: #f8f9fa;
+        /* border:red solid 1px; */
+      }
+
+      #deals > div {
+        width: 30%;
+        height: 100%;
+        margin: auto;
+      }
+      #deals > div > img {
+        width: 100%;
+        height: 100%;
+      }
+
+      /* Quiz */
+      #quiz > img {
+        width: 100%;
+        height: 330px;
+      }
+
+      /* SUPER SAVERS     */
+      #savers {
+        width: 80%;
+        height: 350px;
+        /* border: red solid 1px; */
+        background-color: #f8f9fa;
+        margin: auto;
+        display: flex;
+      }
+      #savers > div {
+        width: 22%;
+        height: 100%;
+        margin: auto;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; /* border:blue solid 1px; */
+      }
+      #savers > div > div:nth-child(1) {
+        width: 100%;
+        height: 65%;
+        /* border:blue solid 1px; */
+        /* margin: 0px 20px; */
+      }
+
+      #savers > div > div > img {
+        width: 100%;
+        height: 100%;
+      }
+      #savers > div > div:nth-child(2) {
+        width: 100%;
+        height: 35%;
+        text-align: center;
+      }
+      #savers > div > div > span:nth-child(2) {
+        text-decoration: line-through;
+      }
+      #savers > div > div > span:nth-child(4) {
+        color: #d8257f;
+        font-weight: 300;
+      }
+      #savers > div > div > p:nth-child(5) {
+        background-color: #1f1f1f;
+        color: white;
+        padding: 10px 0px;
+        font-weight: 300;
+      }
+
+      /* last black page */
+
+      #black {
+        width: 100%;
+        height: 645px;
+        background-color: black;
+        color: white;
+        margin-top: 50px;
+      }
+      #black .color {
+        color: #999999;
+      }
+      #black .color:hover {
+        color: white;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      #black > div:nth-child(1) {
+        width: 100%;
+        height: 120px;
+
+        /* border:red solid 1px; */
+      }
+      #black > div > div {
+        width: 120px;
+        height: 120px;
+        margin: auto;
+      }
+      #black > div > div > img {
+        width: 100%;
+        height: 100%;
+      }
+      #black > div:nth-child(2) {
+        width: 100%;
+        height: 20px;
+        display: flex;
+        margin: auto;
+        /* border: red solid 1px; */
+      }
+      #black > div > .IconList {
+        width: 30%;
+        height: 20px;
+        display: flex;
+        /* border: green solid 1px; */
+      }
+
+      #black > div > .IconList > div {
+        width: 12%;
+        height: 20px;
+        margin: auto;
+        /* border: blue solid 1px; */
+      }
+      #black > div > .IconList > div > img {
+        width: 100%;
+        height: 100%;
+      }
+
+      #black > .blackPara {
+        width: 90%;
+        height: 40px;
+        display: flex;
+        margin: auto;
+        margin-top: 30px;
+        /* border: red solid 1px; */
+      }
+      .blackPara > div > p {
+        text-align: left;
+        color: white;
+      }
+      #black > .blackPara > div {
+        width: 50%;
+        height: 100%;
+        /* border: rgb(7, 155, 7) solid 1px  */
+      }
+      #black > div:nth-child(4) {
+        width: 90%;
+        height: 60px;
+        display: flex;
+
+        margin: auto;
+        /* border: red solid 1px; */
+      }
+      #black > #playStore > div {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        /* border: blue solid 1px; */
+      }
+      #black > #playStore > div > input {
+        font-size: 16px;
+        /* color:white; */
+        padding: 10px 40px 10px 0px;
+        background-color: black;
+        border: 0px;
+        border-bottom: white solid 2px;
+      }
+      #black > #playStore > div > button {
+        padding: 10px;
+        font-size: 16px;
+        background-color: #fc2779;
+        border: 0px;
+        border-radius: 5px;
+        color: white;
+      }
+      #black > #playStore > div > div {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        /* border: blue solid 1px; */
+        /* justify-content: center; */
+        align-items: center;
+        /* color: white; */
+        font-size: 16px;
+      }
+      #black > #playStore > div > div > img {
+        width: 100px;
+        height: 30px;
+      }
+      #black > p:nth-child(5) {
+        margin-left: 65px;
+      }
+      #black > div:nth-child(6) {
+        width: 70%;
+        height: 50px;
+        /* display:inline ; */
+        /* margin:auto; */
+        /* border: red solid 1px; */
+      }
+
+      #black > #title > div {
+        width: 86%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* border: blue solid 1px; */
+        /* color: white;         */
+      }
+      #black > p:nth-child(7) {
+        margin-left: 65px;
+      }
+      #black > div:nth-child(8) {
+        width: 90%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        /* border:red solid 1px; */
+      }
+      #black > #contact > div {
+        width: 20%;
+        height: 100%;
+        /* border: blue solid 1px;; */
+      }
+      #black > #contact > div > p {
+        line-height: 5px;
+      }
+      #black > #contact > div > p > img {
+        width: 15px;
+        height: 15px;
+      }
+      #black > div:nth-child(9) {
+        width: 95%;
+        height: 50px;
+
+        margin: auto;
+        border: 0px;
+        border-bottom: #6d8b99 solid 1px;
+      }
+      #black > div:nth-child(10) {
+        width: 90%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        /* border:red solid 1px; */
+      }
+
+      #conta {
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 50px;
+      }
+
+      .addcart {
+        margin-left: 20px;
+      }
+
+      .symbol {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div>
+        <img
+          src="https://in.sugarcosmetics.com/desc-images/SUGARLogo1.png"
+          alt=""
+        />
+      </div>
+      <div id="inputdiv">
+        <input id="searchBar" placeholder="Try Liduid lipstik " />
+        <button>Search</button>
+      </div>
+      <div>
+        <img
+          id="loginimg"
+          src="https://in.sugarcosmetics.com/desc-images/person.png"
+        />
+        <p><u>Login/Register</u></p>
+      </div>
+      <div id="icon">
+        <i class="fa-solid fa-heart"></i>
+
+        <i class="fa-solid fa-cart-arrow-down"></i>
+        <img src="https://in.sugarcosmetics.com/desc-images/discountIcon.svg" />
+      </div>
+      <div></div>
+    </div>
+    <!-- dropdown menu -->
+    <div id="maindropdown">
+      <div id="dropdown-container">
+        <div>
+          <div class="dropdownBox">
+            <span>MAKEUP</span>
+            <!-- <a href="products_makeup.html">MAKEUP</a> -->
+            <div class="dropdownList">
+              <p>LIPS</p>
+              <p>FACE</p>
+              <p>EYES</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="dropdownBox">
+            <span>BRUSHES</span>
+            <div class="dropdownList">
+              <p>FACE BRUSHES</p>
+              <p>EYES BRUSHES</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="dropdownBox">
+            <span>SKINCARE</span>
+            <div class="dropdownList">
+              <p>MOISTURIZERS</p>
+              <p>MASKS</p>
+              <p>SETTING MISTS</p>
+              <p>COFFEE CULTURE RANGE</p>
+              <p>SHEET MASK COMBO</p>
+              <p>CITRUS GOT REAL RANGE</p>
+              <p>AQUAHOLIC RANGE</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="dropdownBox">
+            <span>TRENDING</span>
+            <div class="dropdownList">
+              <p>SUGAR MURCH STATION</p>
+              <p>MAKEUP KITS</p>
+              <p>BESTSELLERS</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="dropdownBox">
+            <span>BLOG</span>
+            <div class="dropdownList">
+              <p>FEATURES</p>
+              <p>MAKEUP</p>
+              <p>SKINCARES</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="dropdownBox">
+            <span>OFFERS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 style="text-align: center; margin-top: 50px">WISH LIST</h1>
+
+    <!-- ------------------------------- -->
+    <div id="conta"></div>
+
+    <!-- last black page  -->
+    <div id="black">
+      <div>
+        <div>
+          <img src="https://in.sugarcosmetics.com/Footer_sugar_icon.png" />
+        </div>
+      </div>
+      <div>
+        <div class="IconList">
+          <div>
+            <img src="https://in.sugarcosmetics.com/desc-images/facebook.svg" />
+          </div>
+          <div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoLcI-M8ynivEqCkQYqSr2jQrTSYqhMO9Jaw&usqp=CAU"
+            />
+          </div>
+          <div>
+            <img
+              src="https://in.sugarcosmetics.com/desc-images/Instagram.svg"
+            />
+          </div>
+          <div>
+            <img
+              src="https://in.sugarcosmetics.com/desc-images/Pinterest.svg"
+            />
+          </div>
+          <div>
+            <img src="https://in.sugarcosmetics.com/desc-images/Tumblr.svg" />
+          </div>
+          <div>
+            <img src="https://in.sugarcosmetics.com/desc-images/Youtube.svg" />
+          </div>
+          <div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJireUq9-zRbgylR46MFKFnU_ZnEPv4N5tcw&usqp=CAU"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="blackPara">
+        <div>
+          <p>SUBSCRIBE TO OUR NEWSLETTER</p>
+        </div>
+        <div>
+          <p>GET THE NEW SUGAR APP TODAY.</p>
+        </div>
+      </div>
+
+      <div id="playStore">
+        <div>
+          <input placeholder="Your email address" />
+          <button>SIGN UP</button>
+        </div>
+        <div>
+          <div>
+            <p class="color">Tap into a better shopping experience.</p>
+          </div>
+          <div>
+            <img src="https://in.sugarcosmetics.com/playstore.png" />
+            <img src="https://in.sugarcosmetics.com/apple-store.png" />
+          </div>
+        </div>
+      </div>
+      <p>INFORMATION</p>
+      <div id="title">
+        <div>
+          <span class="color">Contact Us</span>
+          <span class="color">Terms & Conditions</span>
+          <span class="color">Returns</span>
+          <span class="color">FAQs</span>
+          <span class="color">About Us</span>
+        </div>
+      </div>
+      <p>GET IN TOUCH</p>
+
+      <div id="contact">
+        <div>
+          <p>
+            <img
+              src="https://in.sugarcosmetics.com/desc-images/phone_android_white.svg"
+            />
+            Call us at
+          </p>
+          <p class="color">022-2847-5555</p>
+          <p class="color">022-6805-6009</p>
+          <p class="color">Monday to Friday : 9 AM to 7 PM</p>
+        </div>
+        <div>
+          <p>Support</p>
+          <p class="color">hello@sugarcosmetics.com</p>
+        </div>
+        <div>
+          <p>WORK WITH US</p>
+          <p class="color">careers@sugarcosmetics.com</p>
+        </div>
+        <div>
+          <p>PRESS & MEDIA</p>
+          <p class="color">pr@sugarcosmetics.com</p>
+        </div>
+        <div>
+          <p>INFLUENCER COLLAB</p>
+          <p class="color">JOIN US</p>
+        </div>
+      </div>
+      <div>
+        <!-- border -->
+      </div>
+      <div>
+        <p>Copyright © 2022 SUGAR Cosmetics. All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  var wishData = JSON.parse(localStorage.getItem("wList"));
+
+  wishData.map(function (elem) {
+    var box = document.createElement("div");
+
+    var img = document.createElement("img");
+    img.src = elem.image_url;
+
+    var name = document.createElement("p");
+    name.textContent = elem.name;
+
+    var symbol = document.createElement("p");
+    symbol.innerText = "Rs.";
+    symbol.className = "symbol";
+
+    var price = (document.createElement("p").innerText = elem.price);
+
+    var btn = document.createElement("button");
+    btn.innerText = "Add To Cart";
+    btn.className = "addcart";
+    btn.addEventListener("click", function () {
+      addToCart(elem);
+    });
+
+    box.append(img, name, symbol, price, btn);
+
+    document.querySelector("#conta").append(box);
+
+    function addToCart(elem) {
+      console.log(elem);
+      cartData.push(elem);
+      localStorage.setItem("cart", JSON.stringify(cartData));
+    }
+  });
+</script>
