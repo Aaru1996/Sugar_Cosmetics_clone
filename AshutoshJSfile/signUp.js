@@ -3,14 +3,14 @@
 
 document.querySelector(".form").addEventListener("submit",addData);
 
-let userData = JSON.parse(localStorage.getItem("userDatabase")) || [];
+var userData = JSON.parse(localStorage.getItem("userDatabase")) || [];
 
 function addData(event){
     event.preventDefault();
 
-      let username = document.querySelector(".name").value;
-      let email = document.querySelector(".email").value;
-      let password = document.querySelector(".password").value;
+      var username = document.querySelector(".name").value;
+      var email = document.querySelector(".email").value;
+      var password = document.querySelector(".password").value;
 
     if(username==""){
         alert("username should not be empty");
@@ -21,19 +21,19 @@ function addData(event){
     else if(email.length==""){
         alert("please fill your email");
     }
-    else if(email.length<=12){
+    else if(email.length<=10){
         alert("please fill a valid email");
     }
     else if(password==""){
         alert("please fill password");
     }
-    else if(password.length<=7)
+    else if(password.length<=6)
     {
         alert("password length must be minimum 8 character");
     }
     else{
 
-        let userObj = {
+        var userObj = {
           username:username,
           email:email,
           password:password
