@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/rajstyle.css">
+</head>
+<body>
+    <div clas="wrapper">
+        <div class="headline">
+            <h1>Welcome back</h1>
+        </div>
+        <form class="form" method="post" action="#">
+            <div class="signin">
+                <div class="form-group">
+                    <h5>EMAIL</h5>   
+                    <input placeholder="name@email.com" type="email" required="#" id="user" >
+                </div>
+                <div class="form-group">
+                    <h5>PASSWORD</h5>
+                    <input placeholder="Enter password" type="password" required="#" id="pass" >
+                    <a href="#"><p class="forget">Forgot password?</p></a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                
+        
+                <div class="account-exist">
+                  New To SugarCosmetic? <a href="signup.html" id="signup">Sign up</a>
+                </div>
+            </div>
+        </form>   
+    </div>
+</body>
+</html>
+<script>
+    var userData = JSON.parse(localStorage.getItem("userData"));
+     var form = document.querySelector(".form");
+     form.addEventListener("submit",addDetails);
+
+  function addDetails(event){
+      event.preventDefault()
+
+        var email = form.user.value;
+        var password = form.pass.value;
+
+        
+        for(var i=0; i<userData.length; i++){
+            if((email == userData[i].email) && (password == userData[i].password)){
+                 alert("login successfull");
+                window.location.href = "index.html";
+                break;
+            }
+            else{
+                alert("Invalid Email or Password");
+                break;
+            }
+        }
+  }
+
+
+
+
+</script>

@@ -1,0 +1,107 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+ }
+ 
+ /* variable defines */
+ 
+ :root{
+     --primary-color:#3525D3;
+     --white-color:#fff;
+     --black-color:#3C4A57;
+     --light-grey:#E4E8EE;
+ }
+ 
+ /* body css */
+ 
+ #body{
+     position:relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+ }
+ .form-group{
+     display: flex;
+     flex-direction: column;
+ }
+ .form-group input{
+     height:65px;
+     width:475px;
+     font-size: 20px;
+ }
+ 
+ input{
+     padding-left: 20px;
+ }
+ /* main-containt css */
+ 
+ .wrapper{
+     /* border:1px solid red; */
+     width:550px;
+     height:auto;
+     padding:50px 25px 50px; 
+     box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     margin-left: 500px;
+ }
+ .headline h1{
+     text-align: center;
+     font-size: 50px;
+ }
+ .para{
+     text-align: center;
+     font-size: 18px;
+     width:300px;
+     margin-left: 90px;
+     margin-top: 15px;
+ }
+ .wrapper .form-group input:focus{
+   outline: none;
+ }
+ 
+ .headline{
+    margin-bottom:50px ;
+ }
+ .signup>div{
+     margin-bottom: 10px;
+ }    
+ .btn{
+     /* margin-left: 480px; */
+     background-color: rgb(6, 110, 230);
+     color: #E4E8EE;
+     font-size: 20px;
+     height:60px;
+     width:475px;
+     cursor: pointer;
+ }
+ 
+ .forget{
+     margin: 5px 0px 30px 480px;
+ }
+ 
+ button{
+     /* margin-left: 480px; */
+     padding:15px 130px;
+     font-size: 20px;
+     font-weight: bold;
+     cursor: pointer;
+     background-color: white;
+ }
+ 
+ .account-exist{
+     text-align: center;
+     margin-top: 20px;
+ }
+ a{
+     text-decoration:none;
+     color: rgb(9, 100, 204) ;
+     margin-left: 5px;
+     font-weight: bold;
+ }
+ small{
+     color:red;
+     text-align: center;
+ }
+ 
