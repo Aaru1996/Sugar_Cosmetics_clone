@@ -19,6 +19,10 @@
 
         font-family: "Quicksand", sans-serif;
       }
+      a{
+            text-decoration: none;
+            color: #1f1f1f;
+        }
       /* *{
           background-color: #f8f9fa;
       } */
@@ -532,9 +536,8 @@
         <p><u>Login/Register</u></p>
       </div>
       <div id="icon">
-        <i class="fa-solid fa-heart"></i>
-
-        <i class="fa-solid fa-cart-arrow-down"></i>
+        <a href="wishList.html"><i class="fa-solid fa-heart"></i></a> 
+        <a href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
         <img src="https://in.sugarcosmetics.com/desc-images/discountIcon.svg" />
       </div>
       <div></div>
@@ -726,7 +729,7 @@
 </html>
 
 <script>
-  var cartData = JSON.parse(localStorage.getItem("cart"));
+  var cartData = JSON.parse(localStorage.getItem("cartItem"));
 
   var total = cartData.reduce(function (sum, elem, index, arr) {
     return sum + elem.price;
@@ -752,11 +755,13 @@
 
     var btn = document.createElement("button");
     btn.innerText = "Remove";
-    btn.type = Number;
+    btn.style.cursor="pointer"
+    // btn.type = Number;
 
-    btn.addEventListener("click", function () {
-      removeItem(elem, index);
+    btn.addEventListener("click", function() {
+      removeItem(elem,index);
     });
+
 
     var qty = document.createElement("input");
 
