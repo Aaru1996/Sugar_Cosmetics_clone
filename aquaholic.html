@@ -682,28 +682,28 @@
             image_url:
                 "https://cdn.shopify.com/s/files/1/0906/2558/products/moisturiser.jpg?v=1626968292",
             name: "Aquaholic Priming Moisturizer",
-            price: "RS.499",
+            price: 499,
             rating: "4.8(151)",
             strike: '',
         }, {
             image_url:
                 "https://cdn.shopify.com/s/files/1/0906/2558/products/Hyaluronic-Serum-3_1.jpg?v=1626423730",
             name: "Aquaholic Hyaluronic Serum",
-            price: "RS.499",
+            price: 499,
             rating: "5(23)",
             strike: '',
         }, {
             image_url:
                 "https://cdn.shopify.com/s/files/1/0906/2558/products/Instant-Pore-Cleansing-Mask-1_1.jpg?v=1626423690",
             name: "Aquaholic Instant Pore Cleansing… ",
-            price: "RS.499",
+            price: 499,
             rating: "4.9(7)",
             strike: '',
         }, {
             image_url:
                 "https://cdn.shopify.com/s/files/1/0906/2558/products/Aquaholic-Pore-Exfoliating-Scrub-3_1.jpg?v=1626363966",
             name: "Aquaholic Pore Exfoliating Scrub",
-            price: "RS.399",
+            price: 399,
             rating: "4.9(19)",
             strike: '',
         }, 
@@ -711,7 +711,7 @@
             image_url:
                 "https://cdn.shopify.com/s/files/1/0906/2558/products/Aquaholic-Extention-Spot-gel-2.jpg?v=1626363976",
             name: "Aquaholic Clarifying Spot Gel",
-            price: "RS.399",
+            price: 399,
             rating: "4.7(23)",
             strike: '',
         },  
@@ -719,7 +719,7 @@
             image_url:
                 "https://cdn.shopify.com/s/files/1/0906/2558/products/Hyderattingkit.jpg?v=1626968294",
             name: "Aquaholic Hydrating Stick",
-            price: "RS.899",
+            price: 899,
             rating: "4.8(49)",
             strike: '',
         }, 
@@ -728,7 +728,7 @@
             image_url:
                 "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-aquaholic-water-boost-mask-13548848087123.jpg?v=1619115321",
             name: "Aquaholic Water Boost Mask",
-            price: "RS.149",
+            price: 149,
             rating: "4.7(26)",
             strike: '',
         },
@@ -736,7 +736,7 @@
             image_url:
                 "https://cdn.shopify.com/s/files/1/0906/2558/products/Mask_2.jpg?v=1626968296",
             name: "Aquaholic Hydrating Stick",
-            price: "RS.899",
+            price: 899,
             rating: "4.9(51)",
             strike: '',
         },
@@ -765,7 +765,7 @@
         name.textContent = elem.name;
 
         var price = document.createElement("span");
-        price.innerText = elem.price;
+        price.innerText = "Rs." + elem.price;
 
         var strike = document.createElement("s");
         strike.innerText = elem.strike;

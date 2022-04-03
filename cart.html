@@ -732,6 +732,7 @@
   var cartData = JSON.parse(localStorage.getItem("cartItem"));
 
   var total = cartData.reduce(function (sum, elem, index, arr) {
+    debugger;
     return sum + elem.price;
   }, 0);
 
@@ -750,7 +751,7 @@
     name.textContent = elem.name;
 
     var price = document.createElement("p");
-    price.innerText = elem.price;
+    price.innerText ="Rs."+ elem.price;
     price.className = "priceTag";
 
     var btn = document.createElement("button");

@@ -680,7 +680,7 @@
             image_url:
                 "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-bling-leader-illuminating-moisturizer-13644982681683.jpg?v=1619115847",
             name: "Bling Leader Illuminating Moisturizer",
-            price: "RS.499",
+            price: 499,
             rating: "4.7(14)",
             strike: '',
         },
@@ -688,21 +688,21 @@
             image_url:
                 "https://cdn.shopify.com/s/files/1/0906/2558/products/moisturiser.jpg?v=1626968292",
             name: "Aquaholic Priming Moisturizer",
-            price: "RS.499",
+            price: 499,
             rating: "4.8(151)",
             strike: '',
         },  {
             image_url:
                 "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-citrus-got-real-daily-moisturizer-28038347292755.jpg?v=1619155748",
             name: "Citrus Got Real Daily Moisturizer",
-            price: "RS.499",
+            price: 499,
             rating: "4(11)",
             strike: '',
         }, {
             image_url:
                 "https://cdn.shopify.com/s/files/1/0906/2558/products/Hyderattingkit.jpg?v=1626968294",
             name: "Aquaholic Hydrating Stick",
-            price: "RS.899",
+            price: 899,
             rating: "4.8(49)",
             strike: '',
         }, 
@@ -733,7 +733,7 @@
         name.textContent = elem.name;
 
         var price = document.createElement("span");
-        price.innerText = elem.price;
+        price.innerText = "Rs." + elem.price;
 
         var strike = document.createElement("s");
         strike.innerText = elem.strike;
