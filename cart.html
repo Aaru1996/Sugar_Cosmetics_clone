@@ -666,7 +666,7 @@
 
   function removeItem(elem, index) {
     cartData.splice(index, 1);
-    localStorage.setItem("cart", JSON.stringify(cartData));
+    localStorage.setItem("cartItem", JSON.stringify(cartData));
     window.location.reload();
   }
   function addItem(elem, index, qty) {
