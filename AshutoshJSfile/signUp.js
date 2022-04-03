@@ -4,18 +4,18 @@
 document.querySelector(".form").addEventListener("submit",addData);
 
 var userData = JSON.parse(localStorage.getItem("userDatabase")) || [];
-
+console.log(userDatabase)
 function addData(event){
     event.preventDefault();
 
-      var username = document.querySelector(".name").value;
+      var name = document.querySelector(".name").value;
       var email = document.querySelector(".email").value;
       var password = document.querySelector(".password").value;
 
-    if(username==""){
+    if(name==""){
         alert("username should not be empty");
     } 
-    if(username.length<=2 && username.length>0){
+    if(name.length<=2 && name.length>0){
         alert("username is too short");
     }
     else if(email.length==""){
@@ -34,21 +34,21 @@ function addData(event){
     else{
 
         var userObj = {
-          username:username,
+          name:name,
           email:email,
-          password:password
+          password:password,
         };
       
         userData.push(userObj);
-        console.log(userData);
+       // console.log(userData);
         localStorage.setItem("userDatabase", JSON.stringify(userData));
 
       alert("Register successfully");
       window.location.href="signin.html";
 
     }
-}
-document.querySelector(".close").addEventListener("click",function(){
+ }
+   document.querySelector(".close").addEventListener("click",function(){
     document.querySelector(".wrapper").style.display="none"
     window.location.href="index.html"
 })

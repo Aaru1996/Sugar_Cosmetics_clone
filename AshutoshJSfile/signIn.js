@@ -2,14 +2,15 @@
 // for login giving the functionallity
 
 var userData = JSON.parse(localStorage.getItem("userDatabase"));
+  console.log(userData)
      var form = document.querySelector(".form");
      form.addEventListener("submit",addDetails);
 
-  function addDetails(event){
+  function addDetails(){
       event.preventDefault()
 
-        var email = form.user.value;
-        var password = form.pass.value;
+        var email = document.querySelector("#user").value
+        var password =document.querySelector("#pass").value
 
         
         for(var i=0; i<userData.length; i++){
