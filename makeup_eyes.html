@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>EYES</title>
     <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
     <style>
@@ -21,7 +24,7 @@
             color: #1f1f1f;
         }
 
-        #container {
+        .container {
             display: flex;
             flex-wrap: wrap;
             margin: 0px auto;
@@ -140,6 +143,7 @@
         body {
             font-family: 'Poppins', sans-serif;
         }
+<<<<<<< HEAD
        
 
 
@@ -153,6 +157,24 @@
             background-color: #f8f9fa;
 
             font-family: 'Quicksand', sans-serif;
+=======
+
+        /* .para{
+            
+            text-align: center;
+              font-size: 32px;
+              font-weight: 100;
+              color:#212529;
+            padding: 20px  0px;
+            background-color: #f8f9fa;
+         
+            
+        } */
+
+        a{
+            text-decoration: none;
+            color: #1f1f1f;
+>>>>>>> 76fc92ca8b720c8eb775c94746daa5d2a6012235
         }
 
         body img,
@@ -164,11 +186,19 @@
         /* *{
             background-color: #f8f9fa;
         } */
+<<<<<<< HEAD
         #container {
             display: flex;
             width: 100%;
             height: 70px;
             justify-content: space-between;
+=======
+        #container{
+            display:flex;
+            width:100%;
+            height:70px;
+            justify-content:space-around;
+>>>>>>> 76fc92ca8b720c8eb775c94746daa5d2a6012235
             align-items: center;
 
             background-color: #f8f9fa;
@@ -181,6 +211,7 @@
             display: flex;
 
         }
+<<<<<<< HEAD
 
         #container>#inputdiv {
             width: 50%;
@@ -194,6 +225,41 @@
             border: 0px;
 
 
+=======
+       #container>#inputdiv{
+           width:50%;
+          
+       }
+       #container>#inputdiv>#searchBar{
+        border-radius: 30px 0px 0px 30px;
+        width:80%;
+        padding: 15px 0px 15px 20px;
+        border: 0px;
+        
+        
+       }
+       #container>#inputdiv>button{
+           background-color: black;
+           color:white;
+           width:20%;
+           border-radius: 0px 30px 30px 0px;
+           border: 0px;
+           font-size: 15px;
+       }
+      #container #loginimg{
+           height:28px;
+           
+           margin-top: 0px;
+       }
+       
+        #icon>img,i{
+            height:15px;
+            margin:5px
+        }
+        #icon i{
+            color:#495057
+            
+>>>>>>> 76fc92ca8b720c8eb775c94746daa5d2a6012235
         }
 
         #inputdiv>button {
@@ -224,6 +290,7 @@
         #icon {
             margin-right: -50px !important
         }
+<<<<<<< HEAD
 
         /* dropdoun menu */
 
@@ -233,6 +300,41 @@
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             padding: 10px 0px;
 
+=======
+       /* dropdoun menu */
+      
+       #maindropdown{
+           width:100%;
+           height:60px;
+           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+           /* padding: 20px; */
+           background-color:white;
+           
+       }
+       #dropdown-container{
+           width:50%;
+           height:60px;
+           /* border:red solid 1px; */
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           
+       }
+       #dropdown-container>div{
+           /* border: blue solid 1px ; */
+           box-sizing: border-box;
+           width:16%;
+           
+         
+       }
+      
+       .dropdownBox {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+       margin-top: 8px;
+       color: #495057;
+>>>>>>> 76fc92ca8b720c8eb775c94746daa5d2a6012235
         }
 
         #dropdown-container {
@@ -289,6 +391,44 @@
         .dropdownList>p:hover {
             font-weight: bold;
 
+        }
+
+      
+       .dropdownBox {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+       margin-top: 8px;
+       color: #495057;
+        }
+        .dropdownBox a{
+            color: #4d6276;
+            text-decoration: none;
+            
+        }
+
+        .dropdownList {
+        
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        }
+        .dropdownBox:hover .dropdownList {
+        display: block;
+        cursor: pointer;
+       
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        z-index: 1;
+        float:inline-start
+        
+        }
+        .dropdownList>p:hover{
+            font-weight: bold;
+            
         }
 
         body {
@@ -534,12 +674,19 @@
         </div>
         <div class="cursor">
             <img id="loginimg" src="https://in.sugarcosmetics.com/desc-images/person.png">
-            <p><u><a href="signup.html">Login/Signup</a></u></p>
+            <p><u><a href="signup.html">Login/Register</a></u></p>
         </div>
         <div id="icon">
+<<<<<<< HEAD
             <a href="wishList.html"><i class="fa-solid fa-heart"></i></a>
             <a href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
             <img src="https://in.sugarcosmetics.com/desc-images/discountIcon.svg">
+=======
+           <a href="wishList.html"><i class="fa-solid fa-heart"></i></a> 
+           <a href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
+           <!-- <i class="fa-solid fa-cart-arrow-down"></i> -->
+          <img src="https://in.sugarcosmetics.com/desc-images/discountIcon.svg">
+>>>>>>> 76fc92ca8b720c8eb775c94746daa5d2a6012235
         </div>
         <div>
 
@@ -568,6 +715,7 @@
                         <p><a href="Face_brushes.html">FACE BRUSHES</a></p>
                         <p><a href="Eye_brushes.html">EYES BRUSHES</a></p>
                     </div>
+<<<<<<< HEAD
                 </div>
             </div>
             <div>
@@ -614,6 +762,41 @@
 
         </div>
     </div>
+=======
+             </div>
+              <div>
+                 <div class="dropdownBox">
+                     <!-- <span>TRENDING</span> -->
+                     <span><a href="products_makeup.html">TRENDING</a></span>
+                     <div class="dropdownList">
+                         <p>SUGAR MURCH STATION</p>
+                         <p>MAKEUP KITS</p>
+                         <p>BESTSELLERS</p>
+                     </div>
+                  </div> 
+              </div>
+              <div>
+                 <div class="dropdownBox">
+                     <span>BLOG</span>
+                     <div class="dropdownList">
+                         <p>FEATURES</p>
+                         <p>MAKEUP</p>
+                         <p>SKINCARES</p>
+                     </div>
+                  </div>
+              </div>
+              <div>
+                  <div class="dropdownBox">
+                     <span>OFFERS</span>
+                  </div>
+                 
+              </div>
+           
+              
+         </div>
+     </div>
+  
+>>>>>>> 76fc92ca8b720c8eb775c94746daa5d2a6012235
     <div class="container"></div>
     <!-- last black page  -->
     <div id="black">
