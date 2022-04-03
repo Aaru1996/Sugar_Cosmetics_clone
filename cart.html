@@ -697,13 +697,21 @@
 
   var checkOut = document.createElement("button");
   checkOut.innerText = "Check Out";
+//   checkout.addEventListener("click",myfunction)
+  
   checkOut.style.marginLeft = "500px";
   checkOut.style.marginTop = "10px";
   checkOut.style.width = "100px";
+
 
   box3.append(para, checkOut);
 
   para.innerText = `You have ${quantitiy} Item and Total price is Rs - ${total}`;
 
   document.querySelector("#cont2").append(box3);
+
+  checkOut.addEventListener("click",myfunction)
+  function myfunction(){
+      window.location.href="checkout.html"
+  }
 </script>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        input{
+           display: flex;
+            margin: auto;
+            margin-top: 5px;
+            padding: 10px;
+            font-size: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+        #submit{
+            background-color: red;
+            border: 0px;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Payment</h1>
+    <form id="form">
+        <div>
+            <input id="name" type="text" placeholder="enter your name"><br>
+            <input id="card" type="number" placeholder="enter your card Number"><br>
+            <input id="cvv" typr="number" placeholder="enter cvv"><br>
+            <input id="expiry" type="date"> <br>
+            <input id="mobile" type="number" placeholder="enter mob. no."><br>
+            <input  id="submit" type="submit" value="Confirm Payment"><br>
+        </div>
+    </form>
+    
+
+</body>
+</html>
+<script>
+
+   document.querySelector("form").addEventListener("submit",payment)
+   function payment(){
+       event.preventDefault();
+       var name=document.querySelector("#name").value ;
+       var cardDetails=document.querySelector("#card").value ;
+       var cvvNo=document.querySelector("#cvv").value ;
+       var expiry=document.querySelector("#expiry").value;
+       var mobile=document.querySelector("#mobile").value ;
+      if(name != "" && cardDetails==1234567891234 && cvvNo ==123 && mobile.length==10 && expiry !="")
+      {
+        alert("payment successful")
+      }
+      else{
+          alert("error")
+      }
+
+      
+   }
+
+</script>
