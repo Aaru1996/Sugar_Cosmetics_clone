@@ -774,6 +774,9 @@
 
         var heart_icon = document.createElement("span");
         heart_icon.innerHTML += '<i class="fa-regular fa-heart"></i>'
+        heart_icon.addEventListener("click", function () {
+            wishList(elem);
+        });
 
         name.classList.add("name");
         box.classList.add("box");
@@ -803,5 +806,13 @@
         alert("item added to cart")
 
         localStorage.setItem("cartItem",JSON.stringify(cartArray))
+     }
+
+     var cartwish= JSON.parse(localStorage.getItem("wishlistItem")) || [];
+     function wishList(elem){
+        cartwish.push(elem);
+        alert("item added to wishlist")
+
+        localStorage.setItem("wishlistItem",JSON.stringify(cartwish))
      }
 </script>

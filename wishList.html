@@ -198,7 +198,7 @@
        #loginimg{
            height:28px;
            
-           margin-top: 10px;
+           margin-top: 0px;
        }
        
         #icon>img,i{
@@ -215,14 +215,15 @@
       
        #maindropdown{
            width:100%;
-           height:40px;
+           height:60px;
            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
            padding: 10px 0px;
+           background-color: white;
            
        }
        #dropdown-container{
            width:50%;
-           height:40px;
+           height:60px;
            /* border:red solid 1px; */
            display: flex;
            justify-content: center;
@@ -474,344 +475,7 @@
         .cursor>p>u>a{
             text-decoration: none;
         }
-    /* body {
-      font-family: "Poppins", sans-serif;
-    }
-
-    .para {
-      text-align: center;
-      font-size: 32px;
-      font-weight: 300;
-      color: #212529;
-      padding: 20px 0px;
-      background-color: #f8f9fa;
-
-      font-family: "Quicksand", sans-serif;
-    }
-
-    /* *{
-          background-color: #f8f9fa;
-      } */
-    #container {
-      display: flex;
-      width: 100%;
-      height: 70px;
-      justify-content: space-between;
-      align-items: center;
-
-      background-color: #f8f9fa;
-    }
-
-    #container>div {
-      /* border: red solid 1px; */
-
-      display: flex;
-    }
-
-    #container>#inputdiv {
-      width: 50%;
-    }
-
-    #inputdiv>#searchBar {
-      border-radius: 30px 0px 0px 30px;
-      width: 80%;
-      padding: 15px 0px 15px 20px;
-      border: 0px;
-    }
-
-    #inputdiv>button {
-      background-color: black;
-      color: white;
-      width: 20%;
-      border-radius: 0px 30px 30px 0px;
-      border: 0px;
-      font-size: 15px;
-    }
-
-    #loginimg {
-      height: 28px;
-
-      margin-top: 10px;
-    }
-
-    #icon>img,
-    i {
-      height: 15px;
-      margin: 5px;
-    }
-
-    #icon>i {
-      color: #495057;
-    }
-
-    #icon {
-      margin-right: -50px !important;
-    }
-
-    /* dropdoun menu */
-
-    #maindropdown {
-      width: 100%;
-      height: 40px;
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-      padding: 10px 0px;
-    }
-
-    #dropdown-container {
-      width: 50%;
-      height: 40px;
-      /* border:red solid 1px; */
-      display: flex;
-      justify-content: center;
-    }
-
-    #dropdown-container>div {
-      /* border: blue solid 1px ; */
-      box-sizing: border-box;
-      width: 16%;
-    }
-
-    .dropdownBox {
-      display: inline-block;
-      position: relative;
-      cursor: pointer;
-      margin-top: 8px;
-      color: #495057;
-    }
-
-    .dropdownBox a {
-      color: grey;
-      text-decoration: none;
-    }
-
-    .dropdownList {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-      padding: 12px 16px;
-      z-index: 1;
-    }
-
-    .dropdownBox:hover .dropdownList {
-      display: block;
-      cursor: pointer;
-
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-      z-index: 1;
-      float: inline-start;
-    }
-
-    .dropdownList>p:hover {
-      font-weight: bold;
-    }
-
-    /* last black page */
-
-    #black {
-      width: 100%;
-      height: 645px;
-      background-color: black;
-      color: white;
-      margin-top: 50px;
-    }
-
-    #black .color {
-      color: #999999;
-    }
-
-    #black .color:hover {
-      color: white;
-      text-decoration: underline;
-      cursor: pointer;
-    }
-
-    #black>div:nth-child(1) {
-      width: 100%;
-      height: 120px;
-
-      /* border:red solid 1px; */
-    }
-
-    #black>div>div {
-      width: 120px;
-      height: 120px;
-      margin: auto;
-    }
-
-    #black>div>div>img {
-      width: 100%;
-      height: 100%;
-    }
-
-    #black>div:nth-child(2) {
-      width: 100%;
-      height: 20px;
-      display: flex;
-      margin: auto;
-      /* border: red solid 1px; */
-    }
-
-    #black>div>.IconList {
-      width: 30%;
-      height: 20px;
-      display: flex;
-      /* border: green solid 1px; */
-    }
-
-    #black>div>.IconList>div {
-      width: 12%;
-      height: 20px;
-      margin: auto;
-      /* border: blue solid 1px; */
-    }
-
-    #black>div>.IconList>div>img {
-      width: 100%;
-      height: 100%;
-    }
-
-    #black>.blackPara {
-      width: 90%;
-      height: 40px;
-      display: flex;
-      margin: auto;
-      margin-top: 30px;
-      /* border: red solid 1px; */
-    }
-
-    .blackPara>div>p {
-      text-align: left;
-      color: white;
-    }
-
-    #black>.blackPara>div {
-      width: 50%;
-      height: 100%;
-      /* border: rgb(7, 155, 7) solid 1px  */
-    }
-
-    #black>div:nth-child(4) {
-      width: 90%;
-      height: 60px;
-      display: flex;
-
-      margin: auto;
-      /* border: red solid 1px; */
-    }
-
-    #black>#playStore>div {
-      width: 50%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      /* border: blue solid 1px; */
-    }
-
-    #black>#playStore>div>input {
-      font-size: 16px;
-      /* color:white; */
-      padding: 10px 40px 10px 0px;
-      background-color: black;
-      border: 0px;
-      border-bottom: white solid 2px;
-    }
-
-    #black>#playStore>div>button {
-      padding: 10px;
-      font-size: 16px;
-      background-color: #fc2779;
-      border: 0px;
-      border-radius: 5px;
-      color: white;
-    }
-
-    #black>#playStore>div>div {
-      width: 30%;
-      height: 100%;
-      display: flex;
-      /* border: blue solid 1px; */
-      /* justify-content: center; */
-      align-items: center;
-      /* color: white; */
-      font-size: 16px;
-    }
-
-    #black>#playStore>div>div>img {
-      width: 100px;
-      height: 30px;
-    }
-
-    #black>p:nth-child(5) {
-      margin-left: 65px;
-    }
-
-    #black>div:nth-child(6) {
-      width: 70%;
-      height: 50px;
-      /* display:inline ; */
-      /* margin:auto; */
-      /* border: red solid 1px; */
-    }
-
-    #black>#title>div {
-      width: 86%;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      /* border: blue solid 1px; */
-      /* color: white;         */
-    }
-
-    #black>p:nth-child(7) {
-      margin-left: 65px;
-    }
-
-    #black>div:nth-child(8) {
-      width: 90%;
-      height: 100px;
-      display: flex;
-      justify-content: space-between;
-      margin: auto;
-      /* border:red solid 1px; */
-    }
-
-    #black>#contact>div {
-      width: 20%;
-      height: 100%;
-      /* border: blue solid 1px;; */
-    }
-
-    #black>#contact>div>p {
-      line-height: 5px;
-    }
-
-    #black>#contact>div>p>img {
-      width: 15px;
-      height: 15px;
-    }
-
-    #black>div:nth-child(9) {
-      width: 95%;
-      height: 50px;
-
-      margin: auto;
-      border: 0px;
-      border-bottom: #6d8b99 solid 1px;
-    }
-
-    #black>div:nth-child(10) {
-      width: 90%;
-      height: 70px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: auto;
-      /* border:red solid 1px; */
-    }
-
+    
     #conta {
       display: grid;
       grid-template-columns: repeat(3, 2fr);
@@ -833,7 +497,9 @@
 <body>
   <div id="container">
     <div>
-      <img src="https://in.sugarcosmetics.com/desc-images/SUGARLogo1.png" alt="" />
+      <a href="index.html"><img  src="https://in.sugarcosmetics.com/desc-images/SUGARLogo1.png" alt=""></a>
+
+      <!-- <img src="https://in.sugarcosmetics.com/desc-images/SUGARLogo1.png" alt="" /> -->
     </div>
     <div id="inputdiv">
       <input id="searchBar" placeholder="Try Liduid lipstik " />
@@ -841,12 +507,11 @@
     </div>
     <div>
       <img id="loginimg" src="https://in.sugarcosmetics.com/desc-images/person.png" />
-      <p><u>Login/Register</u></p>
+      <p><u><a href="signup.html">Login/Register</a></u></p>
     </div>
     <div id="icon">
-      <i class="fa-solid fa-heart"></i>
-
-      <i class="fa-solid fa-cart-arrow-down"></i>
+      <a href="wishList.html"><i class="fa-solid fa-heart"></i></a> 
+      <a href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
       <img src="https://in.sugarcosmetics.com/desc-images/discountIcon.svg" />
     </div>
     <div></div>
@@ -854,67 +519,73 @@
   <!-- dropdown menu -->
   <div id="maindropdown">
     <div id="dropdown-container">
-      <div>
-        <div class="dropdownBox">
-          <span>MAKEUP</span>
-          <!-- <a href="products_makeup.html">MAKEUP</a> -->
-          <div class="dropdownList">
-            <p>LIPS</p>
-            <p>FACE</p>
-            <p>EYES</p>
-          </div>
+        <div>
+            <div class="dropdownBox">
+                <span><a href="products_makeup.html">MAKEUP</a></span>
+               
+                <div class="dropdownList">
+                    <p><a href="makeup_lips.html">LIPS</a></p>
+                    <p><a href="makeup_face.html">FACE</a></p>
+                    <p><a href="makeup_eyes.html">EYES</a></p>
+                </div>
+             </div>
         </div>
-      </div>
-      <div>
-        <div class="dropdownBox">
-          <span>BRUSHES</span>
-          <div class="dropdownList">
-            <p>FACE BRUSHES</p>
-            <p>EYES BRUSHES</p>
-          </div>
+        <div>
+            <div class="dropdownBox">
+                <!-- <span>BRUSHES</span> -->
+                <span><a href="products_brushes.html">BRUSHES</a></span>
+                <div class="dropdownList">
+                    <p><a href="Face_brushes.html">FACE BRUSHES</a></p>
+                    <p><a href="Eye_brushes.html">EYES BRUSHES</a></p>
+                </div>
+               </div>
         </div>
-      </div>
-      <div>
-        <div class="dropdownBox">
-          <span>SKINCARE</span>
-          <div class="dropdownList">
-            <p>MOISTURIZERS</p>
-            <p>MASKS</p>
-            <p>SETTING MISTS</p>
-            <p>COFFEE CULTURE RANGE</p>
-            <p>SHEET MASK COMBO</p>
-            <p>CITRUS GOT REAL RANGE</p>
-            <p>AQUAHOLIC RANGE</p>
-          </div>
+        <div>
+            <div class="dropdownBox">
+                <!-- <span>SKINCARE</span> -->
+                <span><a href="products_skincare.html">SKINCARE</a></span>
+                <div class="dropdownList">
+                    <p><a href="face_moisturizer.html">MOISTURIZERS</a></p>
+                    <p><a href="face_mask.html">MASKS</a></p>
+                    <p><a href="setting_mists.html">SETTING MISTS</a></p>
+                    <P><a href="coffee_culture.html">COFFEE CULTURE RANGE</a></P>
+                    <P><a href="citrus.html">CITRUS GOT REAL RANGE</a></P>
+                    <P><a href="aquaholic.html">AQUAHOLIC RANGE</a></P>
+                </div>
+               </div>
         </div>
-      </div>
-      <div>
-        <div class="dropdownBox">
-          <span>TRENDING</span>
-          <div class="dropdownList">
-            <p>SUGAR MURCH STATION</p>
-            <p>MAKEUP KITS</p>
-            <p>BESTSELLERS</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="dropdownBox">
-          <span>BLOG</span>
-          <div class="dropdownList">
-            <p>FEATURES</p>
-            <p>MAKEUP</p>
-            <p>SKINCARES</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="dropdownBox">
-          <span>OFFERS</span>
-        </div>
-      </div>
+         <div>
+            <div class="dropdownBox">
+                <!-- <span>TRENDING</span> -->
+                <span><a href="TRENDING.html">TRENDING</a></span>
+                <div class="dropdownList">
+                    <p>SUGAR MURCH STATION</p>
+                    <p>MAKEUP KITS</p>
+                    <p>BESTSELLERS</p>
+                </div>
+             </div> 
+         </div>
+         <div>
+            <div class="dropdownBox">
+                <span>BLOG</span>
+                <div class="dropdownList">
+                    <p>FEATURES</p>
+                    <p>MAKEUP</p>
+                    <p>SKINCARES</p>
+                </div>
+             </div>
+         </div>
+         <div>
+             <div class="dropdownBox">
+                <span>OFFERS</span>
+             </div>
+            
+         </div>
+      
+         
     </div>
-  </div>
+</div>
+
 
   <h1 style="text-align: center; margin-top: 50px">WISH LIST</h1>
 

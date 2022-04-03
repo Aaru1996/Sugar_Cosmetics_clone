@@ -4,8 +4,157 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+       <!-- quicksand font -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> -->
+    <script src="https://kit.fontawesome.com/0122b4412d.js" crossorigin="anonymous"></script>
+
+    <title>Payment page</title>
     <style>
+
+
+body{
+            font-family: 'Poppins', sans-serif;
+        }
+        .para{
+            
+            text-align: center;
+              font-size: 32px;
+              font-weight: 300;
+              color:#212529;
+            padding: 20px  0px;
+            background-color: #f8f9fa;
+         
+            font-family: 'Quicksand', sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: #1f1f1f;
+        }
+        body img,button,i:hover{
+            cursor: pointer;
+        }
+        /* *{
+            background-color: #f8f9fa;
+        } */
+        #container{
+            display:flex;
+            width:100%;
+            height:70px;
+            justify-content:space-around;
+            align-items: center;
+            
+            background-color: #f8f9fa;
+
+        }
+        #container>div{
+            /* border: red solid 1px; */
+            
+            display:flex;
+        
+        }
+       #container>#inputdiv{
+           width:50%;
+          
+       }
+       #inputdiv>#searchBar{
+        border-radius: 30px 0px 0px 30px;
+        width:80%;
+        padding: 15px 0px 15px 20px;
+        border: 0px;
+        
+        
+       }
+       #inputdiv>button{
+           background-color: black;
+           color:white;
+           width:20%;
+           border-radius: 0px 30px 30px 0px;
+           border: 0px;
+           font-size: 15px;
+       }
+       #loginimg{
+           height:28px;
+           
+           margin-top: 10px;
+       }
+       
+        #icon>img,i{
+            height:15px;
+            margin:5px
+        }
+        #icon i{
+            color:#495057
+            
+        }
+        #icon{
+            margin-right: -50px !important
+        }
+       /* dropdoun menu */
+      
+       #maindropdown{
+           width:100%;
+           height:40px;
+           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+           padding: 10px 0px;
+           
+       }
+       #dropdown-container{
+           width:50%;
+           height:40px;
+           /* border:red solid 1px; */
+           display: flex;
+           justify-content: center;
+           
+       }
+       #dropdown-container>div{
+           /* border: blue solid 1px ; */
+           box-sizing: border-box;
+           width:16%;
+           
+         
+       }
+      
+       .dropdownBox {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+       margin-top: 8px;
+       color: #495057;
+        }
+        .dropdownBox a{
+            color: #4d6276;
+            text-decoration: none;
+            
+        }
+
+        .dropdownList {
+        
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        }
+        .dropdownBox:hover .dropdownList {
+        display: block;
+        cursor: pointer;
+       
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        z-index: 1;
+        float:inline-start
+        
+        }
+        .dropdownList>p:hover{
+            font-weight: bold;
+            
+        }
         
         input{
            display: flex;
@@ -24,9 +173,296 @@
             padding: 10px;
             font-size: 20px;
         }
+
+
+
+        #black{
+            width:100%;
+          height:645px;
+          background-color:black;
+          color: white;
+          margin-top: 100px;
+         }
+         #black .color{
+             color:#999999;
+         }
+         #black .color:hover{
+               color: white;
+               text-decoration: underline;
+               cursor: pointer;
+         }
+         #black>div:nth-child(1){
+             width:100%;
+             height:120px;
+            
+            
+             /* border:red solid 1px; */
+         }
+         #black>div>div{
+             width:120px;
+             height:120px;
+             margin: auto;
+         }
+         #black>div>div>img{
+             width:100%;
+             height:100%;
+         }
+         #black>div:nth-child(2){
+            width:100%;
+            height:20px;
+            display: flex;
+            margin:auto;
+            /* border: red solid 1px; */
+        }
+        #black>div> .IconList{
+            width:30%;
+            height:20px;
+            display: flex;
+            /* border: green solid 1px; */
+
+        }
+
+       #black>div> .IconList>div{
+            width:12%;
+            height:20px;
+            margin: auto;
+            /* border: blue solid 1px; */
+        }
+        #black>div> .IconList>div>img{
+                    width:100%;
+                    height:100%;
+        }
+
+        #black>.blackPara{
+            width:90%;
+            height:40px;
+            display: flex;
+            margin:auto;
+            margin-top: 30px;
+            /* border: red solid 1px; */
+        }
+        .blackPara>div>p{
+           text-align:left;
+            color: white;
+        }
+        #black>.blackPara>div{
+            width:50%;
+            height:100%;
+            /* border: rgb(7, 155, 7) solid 1px  */
+        }
+        #black>div:nth-child(4){
+            width:90%;
+            height:60px;
+            display: flex;
+            
+            
+            margin:auto;
+            /* border: red solid 1px; */
+        }
+        #black>#playStore>div{
+                  width:50%;
+                  height:100%;
+                  display: flex;
+                  align-items: center;
+                  /* border: blue solid 1px; */
+                 
+        }
+        #black>#playStore>div>input{
+            font-size: 16px;
+            /* color:white; */
+            padding: 10px 40px 10px 0px;
+            background-color: black;
+            border:0px;
+            border-bottom: white solid 2px;
+        }
+        #black>#playStore>div>button{
+            padding:10px;
+            font-size: 16px;
+            background-color:#fc2779 ;
+            border:0px;
+            border-radius: 5px;
+            color: white;
+
+        }
+        #black>#playStore>div>div{
+                  width:30%;
+                  height:100%;
+                  display: flex;
+                  /* border: blue solid 1px; */
+                  /* justify-content: center; */
+                  align-items: center;
+                  /* color: white; */
+                  font-size: 16px;
+        }
+        #black>#playStore>div>div>img{
+            width:100px;
+            height:30px;
+        }
+        #black>p:nth-child(5){
+             margin-left: 65px;
+        }
+        #black>div:nth-child(6){
+            width:70%;
+            height:50px;
+            /* display:inline ; */
+            /* margin:auto; */
+            /* border: red solid 1px; */
+        }
+        
+        #black>#title>div{
+                  width:86%;
+                  height:50px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  /* border: blue solid 1px; */
+                  /* color: white;         */
+        }
+        #black>p:nth-child(7){
+             margin-left: 65px;
+        }
+        #black>div:nth-child(8){
+            width:90%;
+            height:100px;
+            display: flex;
+            justify-content: space-between;
+            margin:auto;
+            /* border:red solid 1px; */
+            
+        }
+        #black>#contact>div{
+            width:20%;
+            height:100%;
+            /* border: blue solid 1px;; */
+        }
+        #black>#contact>div>p{
+            line-height: 5px;
+        }
+        #black>#contact>div>p>img{
+            width: 15px;
+            height:15px;
+        }
+        #black>div:nth-child(9){
+            width:95%;
+            height:50px;
+            
+            margin:auto;
+            border: 0px;
+            border-bottom: #6d8b99 solid 1px;;
+        }
+        #black>div:nth-child(10){
+            width:90%;
+            height:70px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            margin:auto;
+            /* border:red solid 1px; */
+            
+        }
+        .cursor>p>u>a{
+            text-decoration: none;
+        }
+        
     </style>
 </head>
 <body>
+
+    <div id="container">
+        <div>
+            <a href="index.html"><img  src="https://in.sugarcosmetics.com/desc-images/SUGARLogo1.png" alt=""></a>
+           <!-- <img  src="https://in.sugarcosmetics.com/desc-images/SUGARLogo1.png" alt=""> -->
+        </div>
+        <div id="inputdiv">
+            <input id="searchBar" placeholder="Try Liduid lipstik ">
+            <button>Search</button>
+        </div>
+        <div class="cursor"> 
+            <img id="loginimg" src="https://in.sugarcosmetics.com/desc-images/person.png">
+            <p><u><a href="signup.html">Login/Register</a></u></p>
+        </div>
+        <div id="icon">
+           <a href="wishList.html"><i class="fa-solid fa-heart"></i></a> 
+           <a href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
+           <!-- <i class="fa-solid fa-cart-arrow-down"></i> -->
+          <img src="https://in.sugarcosmetics.com/desc-images/discountIcon.svg">
+        </div>
+        <div>
+ 
+        </div>
+       
+     </div>
+     <!-- dropdown menu -->
+     <div id="maindropdown">
+         <div id="dropdown-container">
+             <div>
+                 <div class="dropdownBox">
+                     <span><a href="products_makeup.html">MAKEUP</a></span>
+                    
+                     <div class="dropdownList">
+                         <p><a href="makeup_lips.html">LIPS</a></p>
+                         <p><a href="makeup_face.html">FACE</a></p>
+                         <p><a href="makeup_eyes.html">EYES</a></p>
+                     </div>
+                  </div>
+             </div>
+             <div>
+                 <div class="dropdownBox">
+                     <!-- <span>BRUSHES</span> -->
+                     <span><a href="products_brushes.html">BRUSHES</a></span>
+                     <div class="dropdownList">
+                         <p><a href="Face_brushes.html">FACE BRUSHES</a></p>
+                         <p><a href="Eye_brushes.html">EYES BRUSHES</a></p>
+                     </div>
+                    </div>
+             </div>
+             <div>
+                 <div class="dropdownBox">
+                     <!-- <span>SKINCARE</span> -->
+                     <span><a href="products_skincare.html">SKINCARE</a></span>
+                     <div class="dropdownList">
+                         <p><a href="face_moisturizer.html">MOISTURIZERS</a></p>
+                         <p><a href="face_mask.html">MASKS</a></p>
+                         <p><a href="setting_mists.html">SETTING MISTS</a></p>
+                         <P><a href="coffee_culture.html">COFFEE CULTURE RANGE</a></P>
+                         <P><a href="citrus.html">CITRUS GOT REAL RANGE</a></P>
+                         <P><a href="aquaholic.html">AQUAHOLIC RANGE</a></P>
+                     </div>
+                    </div>
+             </div>
+              <div>
+                 <div class="dropdownBox">
+                     <!-- <span>TRENDING</span> -->
+                     <span><a href="TRENDING.html">TRENDING</a></span>
+                     <div class="dropdownList">
+                         <p>SUGAR MURCH STATION</p>
+                         <p>MAKEUP KITS</p>
+                         <p>BESTSELLERS</p>
+                     </div>
+                  </div> 
+              </div>
+              <div>
+                 <div class="dropdownBox">
+                     <span>BLOG</span>
+                     <div class="dropdownList">
+                         <p>FEATURES</p>
+                         <p>MAKEUP</p>
+                         <p>SKINCARES</p>
+                     </div>
+                  </div>
+              </div>
+              <div>
+                  <div class="dropdownBox">
+                     <span>OFFERS</span>
+                  </div>
+                 
+              </div>
+           
+              
+         </div>
+     </div>
+    
+
     <h1>Payment</h1>
     <form id="form">
         <div>
@@ -38,7 +474,112 @@
             <input  id="submit" type="submit" value="Confirm Payment"><br>
         </div>
     </form>
-    
+        
+
+    <div id="black">
+        <div>
+            <div>
+               <img src="https://in.sugarcosmetics.com/Footer_sugar_icon.png">
+
+            </div>
+        </div>
+        <div>
+           <div class="IconList">
+               <div>
+                   <img src="https://in.sugarcosmetics.com/desc-images/facebook.svg">
+               </div>
+               <div>
+                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoLcI-M8ynivEqCkQYqSr2jQrTSYqhMO9Jaw&usqp=CAU">
+               </div>
+               <div>
+                 <img src="https://in.sugarcosmetics.com/desc-images/Instagram.svg">
+               </div>
+               <div>
+                 <img src="https://in.sugarcosmetics.com/desc-images/Pinterest.svg">
+               </div>
+               <div>
+                 <img src="https://in.sugarcosmetics.com/desc-images/Tumblr.svg">
+               </div>
+               <div>
+                 <img src="https://in.sugarcosmetics.com/desc-images/Youtube.svg">
+               </div>
+               <div>
+                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJireUq9-zRbgylR46MFKFnU_ZnEPv4N5tcw&usqp=CAU">
+               </div>
+          </div>
+        </div>
+        <div class="blackPara">
+            <div>
+                <p>SUBSCRIBE TO OUR NEWSLETTER</p>
+            </div>
+            <div>
+               <p>GET THE NEW SUGAR APP TODAY.</p>
+           </div>
+        </div>
+
+        <div id="playStore">
+            <div>
+                <input placeholder="Your email address">
+                <button>SIGN UP</button>
+            </div>
+            <div>
+                <div>
+                    <p class="color">Tap into a better shopping experience. </p>
+                   
+                    
+                </div>
+                <div>
+                    <img src="https://in.sugarcosmetics.com/playstore.png">
+                    <img src="https://in.sugarcosmetics.com/apple-store.png">
+                </div>
+            </div>
+        </div>
+        <p>INFORMATION</p>
+        <div id="title">
+            <div>
+                <span class="color">Contact Us</span>
+                <span class="color">Terms & Conditions</span>
+               <span class="color">Returns</span>
+               <span class="color">FAQs</span>
+               <span class="color">About Us</span>
+            </div>
+        </div>
+        <p>GET IN TOUCH</p>
+
+        <div id="contact"> 
+            <div>
+                
+                <p> <img src="https://in.sugarcosmetics.com/desc-images/phone_android_white.svg"> Call us at</p>
+                <p class="color"> 022-2847-5555</p>
+                <p class="color"> 022-6805-6009</p>
+                <p class="color"> Monday to Friday : 9 AM to 7 PM</p>
+                
+            </div>
+            <div>
+                <p>Support</p>
+                <p class="color">hello@sugarcosmetics.com</p>
+            </div>
+            <div>
+                <p>WORK WITH US</p>
+                <p class="color">careers@sugarcosmetics.com</p>
+            </div>
+            <div>
+                <p>PRESS & MEDIA</p>
+                <p class="color">pr@sugarcosmetics.com</p>
+            </div>
+            <div>
+                <p>INFLUENCER COLLAB</p>
+                <p class="color">JOIN US</p>
+            </div>
+        </div>
+        <div>
+            <!-- border -->
+        </div>
+        <div>
+            <p>Copyright © 2022 SUGAR Cosmetics. All rights reserved.</p>
+        </div>
+   </div>
+
 
 </body>
 </html>
